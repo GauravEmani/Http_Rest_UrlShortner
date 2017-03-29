@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: gaurav
+      changes:
+      - createTable:
+          tableName: account
+          columns:
+            - column:
+                name: id
+                type: bigint
+                constraints:
+                  primaryKey: true
+                  nullable: false            
+            - column:
+                name: password
+                type: varchar(100)
+  - changeSet:
+      id: 2
+      author: gaurav
+      changes:
+      - createTable:
+          tableName: urlstore
+          columns:
+            - column:
+                name: id
+                type: varchar(100)
+                constraints:
+                  primaryKey: true
+                  nullable: false            
+            - column:
+                name: url
+                type: varchar(100)
+            - column:
+                name: redirectCount
+                type: bigint
+                

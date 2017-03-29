@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: account_db.v1_0_0.yaml
+  
+              
